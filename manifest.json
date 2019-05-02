@@ -1,0 +1,49 @@
+{
+	"name": "ODB pour AUM",
+	"manifest_version": 2,
+	"version": "2.0.4.0",
+	"description": "Extension ODB pour AUM",
+	"icons": {
+		"16": "icons/icon-16.png", 
+		"48": "icons/icon-48.png", 
+		"128": "icons/icon-128.png"
+	},
+	"background": {
+		"scripts": ["libs/jquery-2.0.3.min.js","src/background.js","src/code.js"],
+		"persistent": false
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "icons/icon-19.png", 
+			"38": "icons/icon-38.png"
+		},
+		"default_title": "ODB pour AUM"
+	},
+	"content_scripts": [		
+		{
+			"matches": ["*://www.adopteunmec.com/*"],
+			"run_at": "document_start", 
+			"js": ["libs/jquery-2.0.3.min.js", "src/Home.js","src/code.js"]
+		},
+		{
+			"matches": ["*://www.adopteunmec.com//events*"],
+			"run_at": "document_start",
+			"js": [	"libs/jquery-2.0.3.min.js","src/Final.js","src/code.js"]
+		},
+		{
+			"matches": ["*://www.adopteunmec.com/"],
+			"run_at": "document_start", 
+			"js": ["libs/jquery-2.0.3.min.js", "src/Home.js","src/code.js"]
+		}
+	], 
+	"permissions": [
+		"browser",
+		"storage",	
+		"tabs",			
+		"https://adopteunmec.com/*"
+	],
+	"web_accessible_resources": [
+		"images/banner.png",
+		"images/logo-3000x679.png"
+	]
+}

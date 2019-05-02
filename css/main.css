@@ -1,0 +1,231 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@font-face {
+	font-family: "Open Sans Light";
+	src: url('194122315-OpenSans-Light.eot');
+	src: url('194122315-OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('194122315-OpenSans-Light.svg#Open Sans Light') format('svg'), url('194122315-OpenSans-Light.woff') format('woff'), url('194122315-OpenSans-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url('405670167-OpenSans-Regular.eot');
+	src: url('405670167-OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('405670167-OpenSans-Regular.svg#Open Sans') format('svg'), url('405670167-OpenSans-Regular.woff') format('woff'), url('405670167-OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	margin: 0px auto;
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.TopHeader {
+	background-color: #fff;
+	box-shadow: 0 0 3px 0 #000;
+	overflow: hidden;
+	padding: 20px 0;
+	width: 900px;
+}
+.Left {
+	/*width: 400px;
+	background-color: #099;*/
+	float: left;
+}
+.Right {
+	width: 300px;
+	float: right;
+	padding: 10px 0;
+}
+.Right p {
+	
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	line-height: 26px;
+	margin: 2px 0 0;
+}
+.MainSub {
+  border: 3px solid #000;
+  /* overflow: hidden; */
+  /*padding: 20px 0 0;*/
+  width: 900px;
+}.MainSub_Left {
+	background-color: #fff;
+	float: left;
+	margin: 20px;
+	width: 600px;
+}
+.MainSub_Right {
+	float: right;	
+    margin-top: 20px;
+    margin-right: 20px;
+	width: 227px;
+}
+ul#tabs {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+ul#tabs li {
+	background-color: #fff;
+	border: 1px solid #efefef;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	padding: 10px 0;
+	width: 49%;
+}
+ul#tabs li:hover {
+	background-color: #B21415;
+	color: #FFF;
+}
+ul#tabs li.active {
+	background-color: #B21415;
+	color: #FFF;
+}
+ul#tab {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul#tab li {
+	display: none;
+	padding: 10px;
+	border: solid 3px #efefef;
+}
+ul#tab li.active {
+	display: block;
+}
+ul#tab li h2 {
+	font-weight: 400;
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	border-bottom: solid 5px #32c896;
+}
+.Maintbl th {
+	
+	text-align: left;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 0.4px;
+}
+.Maintbl tr {
+	height: 35px;
+}
+.Maintbl td {
+	width: 25%;
+	
+}
+.Maintbl select {
+	border: 1px solid #efefef;
+	padding: 4px 0;
+	width: 100%;
+}
+
+.divList
+{
+    float: left;
+    padding: 5px 0;
+}
+
+.Footer {
+  clear: both;
+  
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 29px;  
+  text-align: center;
+  width: 900px;
+  margin-bottom: 20px;
+}
+.TopBox {
+  background-color: #ecfafd;
+  border: 1px solid #000;
+  margin: 0 0 20px;
+  padding: 10px 0;
+  width: 225px;
+}
+.TopBox p {  
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.TopBox li {
+	text-align: center;
+	list-style: none;
+	color: #B21415;
+	
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.TopBox a{text-decoration:none;color:#fff;}
+.TopBox a:hover{text-decoration:none;color:#000;}
+.Maintbl a {  
+  color: #333;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px 0;  
+  text-decoration: none;
+  width: 100%;
+}
+.btn-primary {
+  background: none repeat scroll 0 0 #5DBA5D;  
+  color: #fff !important;
+
+  font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.btn-primaryEnd {
+  background: none repeat scroll 0 0 #E25550;  
+  color: #fff !important;
+
+      font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.criteriaInput
+{
+    width: 445px;
+    border: 1px solid #efefef;
+    padding: 5px 0;
+}
+
+.AddCriteriabutton
+{
+    background: none repeat scroll 0 0 #efefef;
+    display: block;
+    padding: 5px 0;
+    width: 120px;
+    border: 1px solid #efefef;
+}
+
+input[type=button]:disabled,
+button:disabled {
+    background: none repeat scroll 0 0 #efefef !important;  
+    color: graytext !important; 
+    
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center; 
+}
